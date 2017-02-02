@@ -22,7 +22,7 @@
             <p>
                 Please enter a length and width to calculate area.
             </p>
-            <form id="rectangleArea" name="rectangleArea" method="POST" action="calc?type=rectArea">
+            <form id="rectangleArea" name="rectangleArea" method="POST" action="calc?calcType=rectArea">
                 <label for="length">
                     Length:
                 </label>
@@ -38,7 +38,7 @@
                 <input type="submit" name="submit" value="Submit">  
                 <br>
                 <p>Answer: ${msgAreaRect}</p>
-        </body>
+            </form>        
         <br>
         <br>
         <br>
@@ -53,7 +53,7 @@
             <p>
                 Please Enter a Radius for a Circle
             </p>
-            <form id="rectangleArea" name="rectangleArea" method="POST" action="calc?type=circleArea">
+            <form id="circleArea" name="circleArea" method="POST" action="calc?calcType=circleArea">
                 <label for="length">
                     Radius:
                 </label>
@@ -63,7 +63,7 @@
                 <input type="submit" name="submit" value="Submit">   
                 <br>
                 <p>Answer: ${msgAreaCircle}</p>
-        </body>
+            </form>    
         <br>
         <br>
         <br>
@@ -77,7 +77,7 @@
             <p>
                 Please enter the lengths of side a and b
             </p>
-            <form id="rectangleArea" name="rectangleArea" method="POST" action="calc?type=rectArea">
+            <form id="rightTriangleHypLength" name="rightTriangleHypLength" method="POST" action="calc?calcType=rightTriHypLength">
                 <label for="length">
                     Side a:
                 </label>
@@ -92,16 +92,17 @@
                 <br>
                 <input type="submit" name="submit" value="Submit">  
                 <br>
-                <p>Answer: ${msgHypRightTriangle}</p>
+                <p>Answer: ${msgHypRightTri}</p>
+            </form>    
         </body>
         <br>
         <br>
     </div>
     <footer>
-            <br>
-            <br>  
-            2017 Chris Gonzalez
-            <br>
-            <br>
-        </footer>
+        <br>
+        <br>  
+        2017 Chris Gonzalez
+        <br>
+        <br>
+    </footer>
 </html>
