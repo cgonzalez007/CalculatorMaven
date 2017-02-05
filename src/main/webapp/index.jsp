@@ -37,7 +37,11 @@
                 <br>
                 <input type="submit" name="submit" value="Submit">  
                 <br>
-                <p>Answer: ${msgAreaRect}</p>
+                <p>
+                    Answer:
+                    <br>
+                    ${msgAreaRect}
+                </p>
             </form>        
         <br>
         <br>
@@ -62,7 +66,11 @@
                 <br>
                 <input type="submit" name="submit" value="Submit">   
                 <br>
-                <p>Answer: ${msgAreaCircle}</p>
+                <p>
+                    Answer:
+                    <br>
+                    ${msgAreaCircle}
+                </p>
             </form>    
         <br>
         <br>
@@ -85,14 +93,18 @@
                 <br>
                 <br>
                 <label for="width">
-                    Side a:
+                    Side b:
                 </label>
                 <input type="text" id="sideB" name="sideB" value="">
                 <br>
                 <br>
                 <input type="submit" name="submit" value="Submit">  
                 <br>
-                <p>Answer: ${msgHypRightTri}</p>
+                <p>
+                    Answer:
+                    <br>
+                    ${msgHypRightTri}
+                </p>
             </form>    
         </body>
         <br>

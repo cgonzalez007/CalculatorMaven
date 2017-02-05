@@ -10,7 +10,7 @@ public class CalculatorService {
             "Error: A valid input must be provided for length and width. "
             + "Input cannot be less than zero";
     private static final String NUMBER_FORMAT_MESSAGE = 
-            "Sorry, the input(s) given is not valid. No negatives, please";
+            "Input(s) given invalid. No negatives, please";
     /**
      * This method gains input stored as a String array, then returns a 
      * calculation, based on the CalculationType specified.
