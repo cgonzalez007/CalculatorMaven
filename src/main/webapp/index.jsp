@@ -51,7 +51,7 @@
             </h2>
             <br>
             <br>
-            <img src="circleArea.png" alt="Rectangle" height="220" width="220">
+            <img src="circleArea.png" alt="Circle" height="220" width="220">
             <br>
             <br>
             <p>
@@ -79,7 +79,7 @@
               Calculator to Calculate the Hypotenuse side of a Right Triangle
             </h2>
             <br>
-            <img src="rightTriangle.png" alt="Rectangle" height="173" width="286">
+            <img src="rightTriangle.png" alt="RightTriangle" height="173" width="286">
             <br>
             <br>
             <p>
