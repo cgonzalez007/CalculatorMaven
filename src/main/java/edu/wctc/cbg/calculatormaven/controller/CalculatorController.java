@@ -75,13 +75,13 @@ public class CalculatorController extends HttpServlet {
                         CalculationType.RIGHT_TRIANGLE_HYPOTENUSE_LENGTH);
                 request.setAttribute(RIGHT_TRI_HYP_LENGTH_ANS_NAME, answerText);
             }
-            RequestDispatcher view =
-                request.getRequestDispatcher(destination);
-            view.forward(request, response);
         } catch (Exception e) {
             destination = INDEX;
             request.setAttribute("errMsg", e.getMessage());
         }
+        RequestDispatcher view =
+                request.getRequestDispatcher(destination);
+        view.forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

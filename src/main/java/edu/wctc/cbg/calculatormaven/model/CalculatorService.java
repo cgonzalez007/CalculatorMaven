@@ -19,7 +19,7 @@ public class CalculatorService {
      * @return answer for calculation to be done.
      */
     public final String getResultForType(String[] values, CalculationType 
-            calcType){
+            calcType) throws NumberFormatException,IllegalArgumentException{
         String resultText = "unknown";
         switch(calcType){
             case RECTANGLE_AREA:
@@ -56,7 +56,8 @@ public class CalculatorService {
      * @param width of rectangle
      * @return the calculated area
      */
-    public final String calculateAreaOfRectangle(String length, String width){
+    public final String calculateAreaOfRectangle(String length, String width)
+    throws NumberFormatException,IllegalArgumentException{
         if(Double.parseDouble(length) < MIN_INPUT || 
                 Double.parseDouble(width) < MIN_INPUT || 
                 width.isEmpty() || width == null || length.isEmpty() || 
@@ -72,7 +73,8 @@ public class CalculatorService {
      * @param radius of circle
      * @return the calculated area
      */
-    public final String calculateAreaOfCircle(String radius){
+    public final String calculateAreaOfCircle(String radius) throws 
+            NumberFormatException,IllegalArgumentException{
         if(Double.parseDouble(radius) < MIN_INPUT || radius.isEmpty() || 
                 radius == null){
             throw new IllegalArgumentException(ERROR_INVALID_INPUT);
@@ -88,7 +90,7 @@ public class CalculatorService {
      * @return the calculated hypotenuse length
      */
     public final String calculateLengthOfHypotenuseOfRightTriangle(String sideA,
-            String sideB){
+            String sideB) throws NumberFormatException,IllegalArgumentException{
          if(Double.parseDouble(sideA) < MIN_INPUT || 
                 Double.parseDouble(sideB) < MIN_INPUT || 
                 sideA.isEmpty() || sideA == null || sideB.isEmpty() || 
@@ -98,11 +100,5 @@ public class CalculatorService {
         return Double.toString(Math.sqrt(
                 Math.pow(Double.parseDouble(sideA), 2) +
                 Math.pow(Double.parseDouble(sideB), 2)));
-    }
-    public static void main(String[] args) {
-        CalculatorService test = new CalculatorService();
-        
-        System.out.println(test.calculateLengthOfHypotenuseOfRightTriangle("3", "3"));
-        
     }
 }
